@@ -52,7 +52,7 @@
 		  #check ssl.conf, your_ec2_public_ip-key.pem, your_ec2_public_ip.pem in your `pwd`
 		  docker run -d --rm -p 443:443 -v `pwd`:/etc/nginx/certs -v `pwd`/ssl.conf:/etc/nginx/conf.d/ssl.conf ghcr.io/logseq/logseq-webapp:latest
 		  ```
-	- open browser an go to https://your_ec2_public_ip-key
+	- open browser and go to https://your_ec2_public_ip
 	- ssl let Loqseq app can use filesystem api to access your local storage
 	- All of this is redundant. You can just install Logseq app or use docker in your machine
 - Last thing
